@@ -1,4 +1,5 @@
 def Decomp(n):
+    o = n
     if n < 2:
         print("Vous devez choisir un entier naturel strictement positif different de 0 et 1.")
     else :
@@ -19,10 +20,7 @@ def Decomp(n):
                 I.append(p)
                 q = int(n / p)
                 n = q
-        str(I)
-        str1 = "x"
-        D = str1.join(I)
-        print(n, "=", D)
+        print(o, "=", "x".join(map(str, I)))
         return I
 
 number = input("Quel nombre choisissez vous ?")
